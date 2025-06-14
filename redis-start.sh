@@ -16,9 +16,4 @@
 # @raycast.author Sérgio Santos
 # @raycast.authorURL https://s3rgiosan.dev
 
-if ! command -v brew &> /dev/null; then
-  echo "brew command is required (https://brew.sh).";
-  exit 1;
-fi
-
-brew services start redis
+tell application "Terminal" to do script "redis-server /opt/homebrew/etc/redis.conf"

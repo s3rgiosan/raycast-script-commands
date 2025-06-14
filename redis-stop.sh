@@ -16,9 +16,5 @@
 # @raycast.author Sérgio Santos
 # @raycast.authorURL https://s3rgiosan.dev
 
-if ! command -v brew &> /dev/null; then
-  echo "brew command is required (https://brew.sh).";
-  exit 1;
-fi
-
-brew services stop redis
+pkill -f redis-server
+echo "Redis stopped"
