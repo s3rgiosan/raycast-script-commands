@@ -3,13 +3,11 @@
 # Required parameters:
 # @raycast.schemaVersion 1
 # @raycast.title Stop Redis
-# @raycast.mode inline
+# @raycast.mode silent
 
 # Optional parameters:
 # @raycast.icon icons/redis.png
-# @raycast.currentDirectoryPath ~
 # @raycast.packageName Redis
-# @raycast.refreshTime 10s
 
 # Documentation:
 # @raycast.description Stops Redis service.
